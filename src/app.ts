@@ -23,6 +23,5 @@ export class App {
     this.useRoutes();
     this.server = this.app.listen(this.port);
     this.logger.log(`Сервер запущен на порту ${this.port}`);
-    // console.log(`Сервер запущен на порту ${this.port}`);
   }
 }
