@@ -1,6 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import { BaseController } from '../common/base.controller.js';
 import { LoggerService } from '../logger/logger.service.js';
+import { HTTPError } from '../errors/http-error.class.js';
 
 export class UserController extends BaseController {
   constructor(logger: LoggerService) {
@@ -16,6 +17,6 @@ export class UserController extends BaseController {
   }
 
   login(req: Request, res: Response, next: NextFunction) {
-    this.ok(res, 'login');
+    next(new HTTPError(401, 'ошибка авторизации', 'login'));
   }
 }
