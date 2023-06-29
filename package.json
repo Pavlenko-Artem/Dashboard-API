@@ -8,8 +8,8 @@
 		"start": "node ./app/main.js",
 		"build": "rm -rf ./dist && tsc",
 		"dev": "concurrently \"tsc -w\" \"nodemon ./dist/main.js\"",
-		"lint": "eslint .src/**",
-		"lint:fix": "eslint .src/** --fix"
+		"lint": "eslint ./src/**",
+		"lint:fix": "eslint ./src/** --fix"
 	},
 	"keywords": [],
 	"author": "",
