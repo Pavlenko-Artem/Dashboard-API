@@ -3,11 +3,11 @@ import express, { Express } from 'express';
 import { inject, injectable } from 'inversify';
 import { Server } from 'http';
 
-import { UserController } from './users/users.controller.js';
-import { ILogger } from './logger/logger.interface.js';
-import { TYPES } from './types.js';
-import { IExeptionFilter } from './errors/exeption.filter.interface.js';
-import { IUserController } from './users/users.controller.interface.js';
+import { UserController } from './users/users.controller';
+import { ILogger } from './logger/logger.interface';
+import { TYPES } from './types';
+import { IExeptionFilter } from './errors/exeption.filter.interface';
+import { IUserController } from './users/users.controller.interface';
 
 @injectable()
 export class App {

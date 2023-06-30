@@ -1,11 +1,11 @@
 import { NextFunction, Request, Response } from 'express';
 import { inject, injectable } from 'inversify';
 
-import { BaseController } from '../common/base.controller.js';
-import { HTTPError } from '../errors/http-error.class.js';
-import { TYPES } from '../types.js';
-import { ILogger } from '../logger/logger.interface.js';
-import { IUserController } from './users.controller.interface.js';
+import { BaseController } from '../common/base.controller';
+import { HTTPError } from '../errors/http-error.class';
+import { TYPES } from '../types';
+import { ILogger } from '../logger/logger.interface';
+import { IUserController } from './users.controller.interface';
 
 @injectable()
 export class UserController extends BaseController implements IUserController {
