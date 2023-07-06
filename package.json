@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"type": "commonjs",
 	"scripts": {
+		"generate": "prisma generate",
 		"start": "node ./dist/main.js",
 		"build": "rm -rf ./dist && tsc",
 		"dev": "nodemon",
