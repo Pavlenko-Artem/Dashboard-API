@@ -8,7 +8,6 @@ import { UserController } from './users/users.controller';
 import { ILogger } from './logger/logger.interface';
 import { TYPES } from './types';
 import { IExeptionFilter } from './errors/exeption.filter.interface';
-import { IUserController } from './users/users.controller.interface';
 import { IConfigService } from './config/config.service.interface';
 import { PrismaService } from './database/prisma.service';
 
